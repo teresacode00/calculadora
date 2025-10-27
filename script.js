@@ -20,7 +20,7 @@ function limpar() {
   document.getElementById('tela').value = '';
 }
 
-// Permitir digitação pelo teclado
+//digitação pelo teclado
 document.addEventListener('keydown', function(event) {
   const tela = document.getElementById('tela');
   if (event.key >= '0' && event.key <= '9' || ['+', '-', '*', '/', '.'].includes(event.key)) {
