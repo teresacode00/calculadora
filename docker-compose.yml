@@ -1,0 +1,15 @@
+
+services:
+  web:
+    #Informa ao Docker Compose para procurar o Dockerfile no diretório atual (ponto)
+    build: .
+    
+    #Mapeia a porta: (porta da sua máquina):(porta no container)
+    #porta 8080 dmáquina mapeada pra porta 80 do Nginx
+    ports:
+      - "8080:80"
+    
+    container_name: calculadora
+    
+    # reiniciar se der errado
+    restart: always
